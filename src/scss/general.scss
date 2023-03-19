@@ -1,0 +1,71 @@
+$accent: #EC7979;
+$active: #AB4949;
+$text: #86878B;
+$white: #FFFFFF;
+$black: #000000;
+
+$Raleway: 'Raleway', sans-serif;
+$Open-Sans: 'Open Sans', sans-serif;
+
+body {
+   background: $white;
+   font-family: $Raleway;
+}
+
+body.no-scroll {
+   overflow: hidden;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+
+   @media screen and (max-width: 1024px) {
+      padding: 0;
+   }
+}
+
+.download-btn button {
+   border: 2px solid $white;
+   background: transparent;
+   font-family: var(--Open-Sans);
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 25px;
+   color: $white;
+   cursor: pointer;
+   transition: all .3s ease-in;
+
+   &:hover {
+      border: 2px solid $accent;
+      color: $accent;
+   }
+
+   &:active {
+      border: 2px solid $active;
+      color: $white;
+      background: $active;
+   }
+}
+
+.button button {
+   background: $accent;
+   border: none;
+   font-family: $Open-Sans;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 25px;
+   color: $white;
+   cursor: pointer;
+   transition: background .3s ease-in;
+
+   &:hover {
+      background: $active;
+   }
+
+   &:active {
+      background: $accent;
+      box-shadow: inset 0px 0px 10px #AB4949;
+   }
+}
